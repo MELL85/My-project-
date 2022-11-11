@@ -41,6 +41,8 @@
    font-style: normal;
    cursor: pointer;
    position: relative;
+   border: none;
+   outline: none;
    background-color: #232428;
 }
 .faq__panel {
