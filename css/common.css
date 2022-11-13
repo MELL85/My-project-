@@ -11,6 +11,11 @@
     --title-font-color: #505155; /*Колір заголовку всередині блоку (для всіх блоків)*/
     --title-font-color-light: #fff; /*Колір частини тексту заголовку у темних блоках*/
   }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
   .sign-start-chapter {
     color: var(--sign-start-color);
     font-size: 13px;
