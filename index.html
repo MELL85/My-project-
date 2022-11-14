@@ -75,18 +75,45 @@
             </div>
         </div>
     </section>
-    <section class="CONTACT US">
-        <h2> <span>-</span> CONTACT US</h2>
-        <div class="text__head">
-            <h3>Book your journey!</h3>
-            <p>Complete the form below, and we will contact you soon to discuss the details!</p>
-        </div>
-        <div>
-            <input type="text" name="Your Name" placeholder="Your Name">
-            <input type="tel" name="Your Phone" placeholder="Your Phone">
-            <input type="email" name="Your Email" placeholder="Your Email">
-            <input type="date" name="Choose date">
-            <input type="submit" value="Request a quote">
+
+    <section class="contact-us">
+        <div class="contact-us__all">
+            <div class="main_form" id="contact-us">
+                <form action="https://formspree.io/f/mdojprqd" method="post">
+                    <div class="main_form__contact">
+                        <div class="contact__general-title">
+                            <h4 class="chapter-font-name-light"> <span class="sign-start-chapter">-</span> CONTACT US
+                            </h4>
+                        </div>
+                        <div class="contact__head-title">
+                            <p class="title-font-light">Book your journey!</p>
+                        </div>
+                        <div class="main_form__title">
+                            <p class="main_form__description">Complete the form below, and we will contact you soon to
+                                discuss the
+                                details!</p>
+                        </div>
+                    </div>
+                    <div class="main_form__imput">
+                        <div class="contact__buttom-text">
+                            <input type="text" name="user-name" placeholder="Your name*" required>
+                        </div>
+                        <div class="contact__buttom-tel">
+                            <input type="tel" name="user-phone" placeholder="Your phone*" required>
+                        </div>
+                        <div class="contact__buttom-email">
+                            <input type="email" name="user-email" placeholder="Your email*" required>
+                        </div>
+                        <div class="contact__buttom-date">
+                            <input type="date" name="date" required>
+                        </div>
+                        <div class="contact__buttom-head">
+                            <input class="contact__buttom-head-title" type="submit" value="request a quote">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="main_form-empty"></div>
         </div>
     </section>
 </body>
