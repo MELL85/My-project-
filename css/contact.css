@@ -61,6 +61,7 @@
     margin-top: 56px;
     border: none;
     outline: none;
+    cursor: pointer;
 }
 .contact__buttom-head-title {
     background-color: #14a9ee;
