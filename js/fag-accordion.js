@@ -1,19 +1,30 @@
 (() => {
+    const acc = document.getElementsByClassName('faq__accordion-button');
 
-    const acc = document.getElementsByClassName('faq__accordion');
-    let i;
+    for (let i = 0; i < acc.length; i++) {
 
-    for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener('click', function () {
-            this.classList.toggle('active');
+        acc[i].onclick = function () {
+            let panel = this.nextElementSibling;
+            console.log(panel);
+            let coursePanel = document.getElementsByClassName('faq__panel');
+            console.log(coursePanel);
+            let courseAccordionActive = document.getElementsByClassName('faq__accordion-button active');
 
-            let faq__panel = this.nextElementSibling;
-            if (faq__panel.style.maxHeight) {
-                faq__panel.style.maxHeight = null;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+                this.classList.remove('active');
             } else {
-                faq__panel.style.maxHeight = panel.scrollHeight + 'px';
+                for (let j = 0; j < courseAccordionActive.length; j++) {
+                    courseAccordionActive[j].classList.remove('active');
+                }
+                for (let t = 0; t < coursePanel.length; t++) {
+                    this.classList.remove('active');
+                    coursePanel[t].style.maxHeight = null;
+                }
+                panel.style.maxHeight = panel.scrollHeight + 'px';
+                this.classList.add('active');
             }
-        });
+        }
     }
 
 })();
